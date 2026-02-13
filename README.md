@@ -1,61 +1,34 @@
-# Principles of Good Code Design
+# good-code
 
------
+Agent instructions and coding standards built on the [6 Principles of Good Code Design](skills/code-design/PRINCIPLES.md): **Consistent, Correct, Clear, Concise, Simple, Salient.**
 
-## 1. Consistent
+## Install as Agent Skill
 
-**Design from first principles — unified naming, patterns, and conventions throughout.**
+```bash
+npx skills add kengz/good-code
+```
 
-Consistency comes first. Before writing a single line, establish first principles: naming conventions, structural patterns, and standards that apply globally. When the same concept uses the same name everywhere, the codebase becomes searchable, replaceable, and predictable. Consistency creates a shared language across the entire system — developers navigate unfamiliar code with confidence because the system teaches you its own rules the moment you touch it.
+This installs the `code-design` skill, which generates a project-specific `CLAUDE.md` (or `AGENTS.md`) tailored to your stack. Works with 37+ agents — Claude Code, Cursor, Codex, Copilot, and more.
 
-**Measurable through:** naming convention adherence, code style consistency, pattern consistency across modules.
+## Use Directly
 
------
+Copy [`skills/code-design/CLAUDE.md`](skills/code-design/CLAUDE.md) into your project root and adapt the comment blocks to your stack.
 
-## 2. Correct
+## What's Included
 
-**Constructed from known truths, not debugged into shape.**
+| File | Purpose |
+|------|---------|
+| [`PRINCIPLES.md`](skills/code-design/PRINCIPLES.md) | The 6 Principles — full explanations |
+| [`CLAUDE.md`](skills/code-design/CLAUDE.md) | Agent instructions template |
+| [`SKILL.md`](skills/code-design/SKILL.md) | Skill definition — auto-detects your stack and generates a tailored instructions file |
 
-Code should be constructed with the same rigor as a logical proof — built upward from solid foundations, where each layer is verified before the next is added. Edge cases and error states are handled completely, not discovered later through debugging. Bugs are not inevitable; they are the consequence of loose construction. When every step is justified and every path is constrained, correctness is something you build from the start, not something you test into existence.
+## The 6 Principles
 
-**Measurable through:** test coverage, bug density, static analysis violations, type safety.
+1. **Consistent** — Design from first principles — unified naming, patterns, and conventions throughout.
+2. **Correct** — Constructed from known truths, not debugged into shape.
+3. **Clear** — Code does what it says — intent is obvious from naming and logic alone.
+4. **Concise** — Simplified to the essence — nothing left to remove.
+5. **Simple** — Few moving parts, easy to explain, cheap to maintain — complexity is not sophistication.
+6. **Salient** — Essential enough to be used widely, fundamental enough to last.
 
------
-
-## 3. Clear
-
-**Code does what it says — intent is obvious from naming and logic alone.**
-
-A lot of coding *is* naming. Function names, variable names, and structure should reveal intent immediately, with logic that follows naturally without mental gymnastics. If you need a comment to explain *what* code does, the code is not clear enough. Clarity is not a courtesy — it is a responsibility to every future reader.
-
-**Measurable through:** cognitive complexity, cyclomatic complexity, nesting depth, method/function length, readability scores.
-
------
-
-## 4. Concise
-
-**Simplified to the essence — nothing left to remove.**
-
-Every line of code must justify its existence. Conciseness is the discipline of relentless refactoring — eliminating duplication, removing dead code, and stripping unnecessary abstraction until only what matters remains. Brevity is about fewer *concepts* to hold in your head, not fewer characters. The goal is not minification; it is distillation. When code is concise, the cognitive load drops and the system becomes something a single mind can hold.
-
-**Measurable through:** code duplication, lines of code, dead code, unused variables/imports.
-
------
-
-## 5. Simple
-
-**Few moving parts, easy to explain, cheap to maintain — complexity is not sophistication.**
-
-Complexity is not sophistication — it is bloat. A complex architecture diagram with dozens of components and tangled dependencies is not a sign of intelligence; it is a sign of poor design that is expensive to maintain and impossible to explain. Good design is simple enough that anyone can understand it and reduced to the fewest moving parts while losing nothing essential. It takes mastery to arrive at true simplicity. Fewer dependencies, lower maintenance, and lower cost all follow as natural consequences.
-
-**Measurable through:** component count, dependency complexity, ability to explain the system simply.
-
------
-
-## 6. Salient
-
-**Essential enough to be used widely, fundamental enough to last.**
-
-The ultimate measure of good code is that it endures. Salient code addresses real needs, gets adopted widely, and stands unchanged over time — not because no one dares touch it, but because there is nothing left to improve. Code that follows the preceding principles — consistent, correct, clear, concise, and simple — naturally arrives here: used broadly, needed deeply, and lasting because it was built right.
-
-**Measurable through:** code churn, unused features, technical debt ratio.
+Read the full writeup in [`PRINCIPLES.md`](skills/code-design/PRINCIPLES.md).
