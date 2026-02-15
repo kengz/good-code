@@ -66,7 +66,6 @@ Apply these six principles to every decision.
 1. **Give enough context in spawn prompts** - teammates don't inherit conversation history, only CLAUDE.md and project context
 2. **Size tasks appropriately** - self-contained units with clear deliverables, ~5-6 per teammate
 3. **Avoid file conflicts** - each teammate owns different files
-4. **Use sonnet for volume work** - reserve opus for strategic decisions
 
 ## Documentation
 
