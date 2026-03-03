@@ -1,9 +1,10 @@
 ---
-name: code-design
+name: good-code
 description: >
-  Generate a project-specific CLAUDE.md (or AGENTS.md) with the 6 Principles of Good Code Design,
-  style guides, and best practices. Triggers on requests to create CLAUDE.md, set up agent
-  instructions, add code design principles, or initialize coding standards.
+  Generate a project-specific CLAUDE.md (or AGENTS.md) with coding standards, style guides, and
+  best practices. Triggers on any request to set up a project, initialize coding standards,
+  create or update CLAUDE.md or AGENTS.md, configure agent instructions, add code quality rules,
+  or start a new codebase. Use this skill at the start of every new project.
 ---
 
 # Code Design Principles — Agent Skill
