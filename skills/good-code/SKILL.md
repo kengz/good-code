@@ -7,9 +7,9 @@ description: >
   or start a new codebase. Use this skill at the start of every new project.
 ---
 
-# Code Design Principles — Agent Skill
+# The 6 Principles — Agent Skill
 
-You are setting up agent instructions for this project based on the **6 Principles of Good Code Design**: Consistent, Correct, Clear, Concise, Simple, Salient.
+You are setting up agent instructions for this project based on **The 6 Principles**: Consistent, Correct, Clear, Concise, Simple, Salient. Framed for code, but medium-agnostic — they govern good writing, documentation, and design just as well.
 
 ## Step 1: Check for Existing Files
 

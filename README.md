@@ -1,6 +1,8 @@
 # good-code
 
-Agent instructions and coding standards built on the [6 Principles of Good Code Design](skills/good-code/PRINCIPLES.md): **Consistent, Correct, Clear, Concise, Simple, Salient.**
+Agent instructions and coding standards built on [The 6 Principles](skills/good-code/PRINCIPLES.md): **Consistent, Correct, Clear, Concise, Simple, Salient.**
+
+> Framed for code — this repo is **good-code** — but medium-agnostic: the same six principles govern good writing, documentation, and design just as well.
 
 ## Install as Agent Skill
 
@@ -26,7 +28,7 @@ Copy [`skills/good-code/CLAUDE.md`](skills/good-code/CLAUDE.md) into your projec
 
 1. **Consistent** — Design from first principles — unified naming, patterns, and conventions throughout.
 2. **Correct** — Constructed from known truths, not debugged into shape.
-3. **Clear** — Code does what it says — intent is obvious from naming and logic alone.
+3. **Clear** — Says what it does — intent is obvious from naming and logic alone.
 4. **Concise** — Simplified to the essence — nothing left to remove.
 5. **Simple** — Few moving parts, easy to explain, cheap to maintain — complexity is not sophistication.
 6. **Salient** — Essential enough to be used widely, fundamental enough to last.
