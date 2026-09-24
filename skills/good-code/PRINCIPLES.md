@@ -30,15 +30,15 @@ Simple includes **concise**: every part justifies its existence. Eliminate dupli
 
 ## 3. General
 
-**One rule for the whole class of cases, not one rule per case.**
+**One principle that unifies many cases, in place of many ad hoc rules.**
 
-Build for the class, not the instance. A rule that covers many cases replaces many rules that each cover one, and a design of general parts stays small as the problem grows. When a new case arrives, the first question is whether an existing rule already covers it. Special cases accumulate quietly; each looks reasonable alone, and together they make the work incoherent.
+Physics is the history of this principle. Kepler's three laws fit the planets; Newton's gravitation explained them, and the falling apple too. Electricity, magnetism and light were separate subjects until Maxwell's equations made them one. Each time, a set of ad hoc rules that each fit their own cases gave way to a single principle that covered them all, and the new principle was simpler than the rules it replaced. Mathematics works the same way: an abstraction earns its place by showing that problems which looked different are one problem.
 
-Generality is bounded by simplicity: stop where going further would add parts nobody needs.
+Work should follow the same direction. When rules accumulate, each patching its own case, look for the principle they are special cases of, and replace them with it. A general principle does not grow with the problem; ad hoc rules do, and together they drift into contradiction. Generality and simplicity meet here: the right general principle is shorter than the rules it replaces. Generalising that adds parts nobody needs is not generality — it fails Simple.
 
-**Catches:** a pile of special cases, each tidy on its own.
+**Catches:** a growing set of ad hoc rules, each fitting its own case, that no one principle yet explains.
 
-**Measurable through:** special cases per rule, new rules per new requirement, parameters versus copies.
+**Measurable through:** rules replaced per principle, special cases per rule, new rules per new requirement.
 
 ## 4. Clear
 
