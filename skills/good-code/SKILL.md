@@ -7,9 +7,9 @@ description: >
   or start a new codebase. Use this skill at the start of every new project.
 ---
 
-# The 6 Principles — Agent Skill
+# The 5 Principles — Agent Skill
 
-You are setting up agent instructions for this project based on **The 6 Principles**: Consistent, Correct, Clear, Concise, Simple, Salient. Framed for code, but medium-agnostic — they govern good writing, documentation, and design just as well.
+You are setting up agent instructions for this project based on **The 5 Principles**: Correct, Simple, General, Clear, Salient. Framed for code, but medium-agnostic — they govern good writing, documentation, and design just as well.
 
 ## Step 1: Check for Existing Files
 
