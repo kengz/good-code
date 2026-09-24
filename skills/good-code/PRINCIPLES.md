@@ -32,9 +32,9 @@ Simple includes **concise**: every part justifies its existence. Eliminate dupli
 
 **One principle that unifies many cases, in place of many ad hoc rules.**
 
-Physics is the history of this principle. Kepler's three laws fit the planets; Newton's gravitation explained them, and the falling apple too. Electricity, magnetism and light were separate subjects until Maxwell's equations made them one. Each time, a set of ad hoc rules that each fit their own cases gave way to a single principle that covered them all, and the new principle was simpler than the rules it replaced. Mathematics works the same way: an abstraction earns its place by showing that problems which looked different are one problem.
+Ad hoc rules accumulate. Each fits its own case and looks reasonable alone; together they grow with the problem, overlap, and drift into contradiction. The better answer is almost always a more general principle — one that the ad hoc rules turn out to be special cases of, and that covers them all at once. Progress is the move from many rules to fewer, more general ones.
 
-Work should follow the same direction. When rules accumulate, each patching its own case, look for the principle they are special cases of, and replace them with it. A general principle does not grow with the problem; ad hoc rules do, and together they drift into contradiction. Generality and simplicity meet here: the right general principle is shorter than the rules it replaces. Generalising that adds parts nobody needs is not generality — it fails Simple.
+When rules start to pile up, stop adding and look for the principle underneath. A general principle does not grow as new cases arrive; the new case is already covered. The right one is also shorter than the rules it replaces, so generality and simplicity point the same way. Generalising that adds parts nobody needs is not generality — it fails Simple.
 
 **Catches:** a growing set of ad hoc rules, each fitting its own case, that no one principle yet explains.
 

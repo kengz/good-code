@@ -27,7 +27,7 @@ Apply these five principles to every decision. Framed for code, but medium-agnos
 
 1. **Correct** — Right in every state it can reach, failure included — constructed from known truths, not debugged into shape. Build upward from solid foundations, each layer verified before the next. Includes reliable: every failure state is designed for, and a failure is safe and visible.
 2. **Simple** — The fewest parts that lose nothing essential — complexity is not sophistication. Nothing can hide in a simple thing. Includes concise: eliminate duplication, remove what is dead, strip unnecessary abstraction — fewer concepts, not fewer characters.
-3. **General** — One principle that unifies many cases, in place of many ad hoc rules. As physics unified the falling apple and the planets, look for the principle that ad hoc rules are special cases of, and replace them with it. The right general principle is shorter than the rules it replaces.
+3. **General** — One principle that unifies many cases, in place of many ad hoc rules. When rules pile up, look for the principle they are special cases of, and replace them with it. The right general principle is shorter than the rules it replaces.
 4. **Clear** — Says what it does — intent is obvious from naming and structure alone. If you need a comment to explain what something does, it is not clear enough. Includes consistent: set naming and patterns first, and use the same name for the same concept everywhere.
 5. **Salient** — Reproducible, essential and lasting — independent attempts converge on it. Run it again and get the same result; derive it again and arrive at the same thing. What is arbitrary melts away; what remains lasts because nothing is left to improve.
 
