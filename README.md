@@ -26,10 +26,10 @@ Copy [`skills/good-code/CLAUDE.md`](skills/good-code/CLAUDE.md) into your projec
 
 ## The 5 Principles
 
-1. **Correct** — Right in every state it can reach, failure included — constructed from known truths, not debugged into shape.
+1. **Correct** — Right in every condition it will meet, failure included — constructed from known truths, not debugged into shape.
 2. **Simple** — The fewest parts that lose nothing essential — complexity is not sophistication.
 3. **General** — One principle that unifies many cases, in place of many ad hoc rules.
-4. **Clear** — Says what it does — intent is obvious from naming and structure alone.
+4. **Clear** — Says what it does — its purpose is obvious from its form alone.
 5. **Salient** — Reproducible, essential and lasting — independent attempts converge on it.
 
 Read the full writeup in [`PRINCIPLES.md`](skills/good-code/PRINCIPLES.md).
