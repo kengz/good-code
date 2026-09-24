@@ -8,19 +8,19 @@ Each principle catches a failure the other four miss. Reliable, Concise, Consist
 
 **Right in every condition it will meet, failure included — constructed from known truths, not debugged into shape.**
 
-Work should be constructed with the same rigor as a proof — built upward from solid foundations, where each step is checked before the next rests on it. Errors are not inevitable; they are the consequence of loose construction. When every step is justified and every case is accounted for, correctness is something you build from the start, not something you find by trial and repair.
+Work should be constructed with the same rigor as a proof — built upward from solid foundations, where each step is checked before the next rests on it. Errors are not inevitable; they are the consequence of loose construction.
 
-Correct includes **reliable**: correctness that holds in real conditions and over time, not only in the expected case. What can go wrong is thought through before it does. When something fails, it fails safe and it fails visibly.
+Correct includes **reliable**: correctness that holds in real conditions and over time, not only in the expected case. What can go wrong is thought through before it does. When something does fail, the failure is caught early and does the least harm.
 
-**Catches:** work that holds in the expected case and breaks, silently, in the others.
+**Catches:** work that holds in the expected case and fails, unnoticed, in the others.
 
-**Measurable through:** claims traced to their basis, cases covered, errors found after delivery, failures that were foreseen.
+**Measurable through:** claims traced to their basis, situations addressed, errors found after delivery, failures that were foreseen.
 
 ## 2. Simple
 
 **The fewest parts that lose nothing essential — complexity is not sophistication.**
 
-Complexity is not sophistication — it is bloat. Work with many parts and tangled dependencies is not a sign of intelligence; it is a sign of poor design, expensive to maintain and impossible to explain. Nothing can hide in a simple thing, which is why it is more likely to be correct. It takes mastery to arrive at true simplicity. Fewer dependencies, lower upkeep and lower cost follow as natural consequences.
+It is bloat. Work with many parts and tangled dependencies is not a sign of intelligence; it is a sign of poor design, expensive to maintain and impossible to explain. Fewer parts leave fewer places for an error to hide. It takes mastery to arrive at true simplicity. Fewer dependencies, lower upkeep and lower cost follow as natural consequences.
 
 Simple includes **concise**: every part justifies its existence. Remove repetition, cut what no longer serves, drop layers that add nothing. Brevity is about fewer *ideas* to hold in your head, not fewer words — the goal is distillation, not compression.
 
@@ -50,13 +50,13 @@ Clear includes **consistent**: settle the terms and patterns first, and apply th
 
 **Catches:** work that is correct and simple, and still hard to follow.
 
-**Measurable through:** time for a newcomer to follow it, questions it raises, names used for one idea, depth of nesting.
+**Measurable through:** time for a newcomer to follow it, questions it raises, names used for one idea, how many layers deep an idea sits.
 
 ## 5. Salient
 
 **Reproducible, essential and lasting — independent attempts converge on it.**
 
-Salient includes **reproducible**, in two senses. Do it again and you get the same result. Derive it again, independently, and you arrive at the same thing. What is correct is rediscovered; what is arbitrary melts away. That is the test to apply: would a second attempt, made alone, converge here?
+Salient includes **reproducible**, twice over: repeatable and independently derivable. Do it again and you get the same result; derive it again, alone, and you arrive at the same thing. What is correct is rediscovered; what is arbitrary melts away. That is the test to apply: would a second attempt, made alone, converge here?
 
 Salient work is irreducible — nothing essential is missing, nothing inessential remains. It endures not because no one dares touch it, but because there is nothing left to improve.
 
