@@ -1,8 +1,8 @@
 # good-code
 
-Agent instructions and coding standards built on [The 6 Principles](skills/good-code/PRINCIPLES.md): **Consistent, Correct, Clear, Concise, Simple, Salient.**
+Agent instructions and coding standards built on [The 5 Principles](skills/good-code/PRINCIPLES.md): **Correct, Simple, General, Clear, Salient.**
 
-> Framed for code — this repo is **good-code** — but medium-agnostic: the same six principles govern good writing, documentation, and design just as well.
+> Framed for code — this repo is **good-code** — but medium-agnostic: the same five principles govern good writing, documentation, and design just as well.
 
 ## Install as Agent Skill
 
@@ -20,17 +20,16 @@ Copy [`skills/good-code/CLAUDE.md`](skills/good-code/CLAUDE.md) into your projec
 
 | File | Purpose |
 |------|---------|
-| [`PRINCIPLES.md`](skills/good-code/PRINCIPLES.md) | The 6 Principles — full explanations |
+| [`PRINCIPLES.md`](skills/good-code/PRINCIPLES.md) | The 5 Principles — full explanations |
 | [`CLAUDE.md`](skills/good-code/CLAUDE.md) | Agent instructions template |
 | [`SKILL.md`](skills/good-code/SKILL.md) | Skill definition — auto-detects your stack and generates a tailored instructions file |
 
-## The 6 Principles
+## The 5 Principles
 
-1. **Consistent** — Design from first principles — unified naming, patterns, and conventions throughout.
-2. **Correct** — Constructed from known truths, not debugged into shape.
-3. **Clear** — Says what it does — intent is obvious from naming and logic alone.
-4. **Concise** — Simplified to the essence — nothing left to remove.
-5. **Simple** — Few moving parts, easy to explain, cheap to maintain — complexity is not sophistication.
-6. **Salient** — Essential enough to be used widely, fundamental enough to last.
+1. **Correct** — Right in every state it can reach, failure included — constructed from known truths, not debugged into shape.
+2. **Simple** — The fewest parts that lose nothing essential — complexity is not sophistication.
+3. **General** — One rule for the whole class of cases, not one rule per case.
+4. **Clear** — Says what it does — intent is obvious from naming and structure alone.
+5. **Salient** — Reproducible, essential and lasting — independent attempts converge on it.
 
 Read the full writeup in [`PRINCIPLES.md`](skills/good-code/PRINCIPLES.md).

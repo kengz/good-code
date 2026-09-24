@@ -1,51 +1,65 @@
-# The 6 Principles
+# The 5 Principles
 
-> Framed for code — this repo is **good-code** — but medium-agnostic: the same six principles govern good writing, documentation, and design just as well.
+> Framed for code — this repo is **good-code** — but medium-agnostic: the same five principles govern good writing, documentation, and design just as well.
 
-## 1. Consistent
+Each principle catches a failure the other four miss. Reliable, Concise, Consistent and Reproducible are not separate principles; each lives inside the one it serves.
 
-**Design from first principles — unified naming, patterns, and conventions throughout.**
+## 1. Correct
 
-Consistency comes first. Before writing a single line, establish first principles: naming conventions, structural patterns, and standards that apply globally. When the same concept uses the same name everywhere, the work becomes searchable, replaceable, and predictable. Consistency creates a shared language across the whole system — a reader navigates unfamiliar territory with confidence because the work teaches you its own rules the moment you touch it. This holds as true for a document or a design as it does for a codebase.
+**Right in every state it can reach, failure included — constructed from known truths, not debugged into shape.**
 
-**Measurable through:** naming convention adherence, style consistency, pattern consistency across modules.
+Work should be constructed with the same rigor as a logical proof — built upward from solid foundations, where each layer is verified before the next is added. Defects are not inevitable; they are the consequence of loose construction. When every step is justified and every path is constrained, correctness is something you build from the start, not something you test into existence.
 
-## 2. Correct
+Correct includes **reliable**: correctness that holds under real conditions over time. A dropped connection, a crash, a restart — every failure state is designed for, not discovered later. When something fails, it fails safe and it fails visibly.
 
-**Constructed from known truths, not debugged into shape.**
+**Catches:** work that runs on the happy path and leaves a wrong state after a fault.
 
-Work should be constructed with the same rigor as a logical proof — built upward from solid foundations, where each layer is verified before the next is added. Edge cases and failure states are handled completely, not discovered later. Defects are not inevitable; they are the consequence of loose construction. When every step is justified and every path is constrained, correctness is something you build from the start, not something you test into existence.
+**Measurable through:** test coverage, defect density, failure-mode coverage, static analysis violations, type safety.
 
-**Measurable through:** test coverage, defect density, static analysis violations, type safety.
+## 2. Simple
 
-## 3. Clear
+**The fewest parts that lose nothing essential — complexity is not sophistication.**
 
-**Says what it does — intent is obvious from naming and logic alone.**
+Complexity is not sophistication — it is bloat. A design with dozens of components and tangled dependencies is not a sign of intelligence; it is a sign of poor design that is expensive to maintain and impossible to explain. Nothing can hide in a simple thing, which is why it is more likely to be correct. It takes mastery to arrive at true simplicity. Fewer dependencies, lower maintenance, and lower cost follow as natural consequences.
 
-A lot of the work *is* naming. Names and structure should reveal intent immediately, with logic that follows naturally without mental gymnastics. If you need a comment to explain *what* something does, it is not clear enough. Clarity is not a courtesy — it is a responsibility to every future reader.
+Simple includes **concise**: every part justifies its existence. Eliminate duplication, remove what is dead, strip unnecessary abstraction. Brevity is about fewer *concepts* to hold in your head, not fewer characters — the goal is distillation, not minification.
 
-**Measurable through:** cognitive complexity, cyclomatic complexity, nesting depth, unit length, readability scores.
+**Catches:** work that is right but too large to hold in one mind, explain, or fix.
 
-## 4. Concise
+**Measurable through:** component count, dependency complexity, duplication, dead weight, ability to explain the system simply.
 
-**Simplified to the essence — nothing left to remove.**
+## 3. General
 
-Every part must justify its existence. Conciseness is the discipline of relentless refactoring — eliminating duplication, removing what is dead, and stripping unnecessary abstraction until only what matters remains. Brevity is about fewer *concepts* to hold in your head, not fewer characters. The goal is not minification; it is distillation. When work is concise, the cognitive load drops and the system becomes something a single mind can hold.
+**One rule for the whole class of cases, not one rule per case.**
 
-**Measurable through:** duplication, size, dead weight, unused parts.
+Build for the class, not the instance. A rule that covers many cases replaces many rules that each cover one, and a design of general parts stays small as the problem grows. When a new case arrives, the first question is whether an existing rule already covers it. Special cases accumulate quietly; each looks reasonable alone, and together they make the work incoherent.
 
-## 5. Simple
+Generality is bounded by simplicity: stop where going further would add parts nobody needs.
 
-**Few moving parts, easy to explain, cheap to maintain — complexity is not sophistication.**
+**Catches:** a pile of special cases, each tidy on its own.
 
-Complexity is not sophistication — it is bloat. A diagram with dozens of components and tangled dependencies is not a sign of intelligence; it is a sign of poor design that is expensive to maintain and impossible to explain. Good work is simple enough that anyone can understand it and reduced to the fewest moving parts while losing nothing essential. It takes mastery to arrive at true simplicity. Fewer dependencies, lower maintenance, and lower cost all follow as natural consequences.
+**Measurable through:** special cases per rule, new rules per new requirement, parameters versus copies.
 
-**Measurable through:** component count, dependency complexity, ability to explain the system simply.
+## 4. Clear
 
-## 6. Salient
+**Says what it does — intent is obvious from naming and structure alone.**
 
-**Essential enough to be used widely, fundamental enough to last.**
+A lot of the work *is* naming. Names and structure should reveal intent immediately, with logic that follows naturally without mental gymnastics. If you need a comment to explain *what* something does, it is not clear enough. Clarity is not a courtesy — it is a responsibility to every future reader, and it has to be asked for, because it does not happen by default.
 
-The ultimate measure of good work is that it endures. Salient work addresses real needs, gets adopted widely, and stands unchanged over time — not because no one dares touch it, but because there is nothing left to improve. Work that follows the preceding principles — consistent, correct, clear, concise, and simple — naturally arrives here: used broadly, needed deeply, and lasting because it was built right.
+Clear includes **consistent**: establish naming conventions and structural patterns first, and apply them everywhere. When the same concept uses the same name everywhere, the work becomes searchable, replaceable, and predictable, and teaches its own rules the moment you touch it.
 
-**Measurable through:** churn, unused features, technical debt ratio.
+**Catches:** work that is correct and simple, and still unreadable.
+
+**Measurable through:** cognitive complexity, nesting depth, unit length, naming convention adherence, pattern consistency across modules.
+
+## 5. Salient
+
+**Reproducible, essential and lasting — independent attempts converge on it.**
+
+Salient includes **reproducible**, in two senses. Run it again and you get the same result. Derive it again, independently, and you arrive at the same thing. What is correct is rediscovered; what is arbitrary melts away. This is why mathematics and physics prize it, and it is the test to apply: would a second attempt, made alone, converge here?
+
+Salient work is irreducible — nothing essential is missing, nothing inessential remains. It endures not because no one dares touch it, but because there is nothing left to improve.
+
+**Catches:** work that is neat, broad and readable — and simply wrong, or impossible to repeat.
+
+**Measurable through:** agreement between independent attempts, run-to-run determinism, churn, unused features.
