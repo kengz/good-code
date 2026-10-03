@@ -1,28 +1,28 @@
 ---
 name: good-code
 description: >
-  Generate a project-specific CLAUDE.md (or AGENTS.md) with coding standards, style guides, and
+  Generate a project-specific AGENTS.md (with CLAUDE.md as exactly `@AGENTS.md`) with coding standards, style guides, and
   best practices. Triggers on any request to set up a project, initialize coding standards,
   create or update CLAUDE.md or AGENTS.md, configure agent instructions, add code quality rules,
   or start a new codebase. Use this skill at the start of every new project.
 ---
 
-# The 5 Principles — Agent Skill
+# The 5 Principles: Agent Skill
 
-You are setting up agent instructions for this project based on **The 5 Principles**: Correct, Simple, General, Clear, Salient. Framed for code, but medium-agnostic — they govern good writing, documentation, and design just as well.
+You are setting up agent instructions for this project based on **The 5 Principles**: Consistent, Simple, General, Clear, Salient. Their laws (the Algorithm, Iteration, Identity, Refinement, Communication) are in `PRINCIPLES.md`.
 
 ## Step 1: Check for Existing Files
 
 Before writing anything, check if any of these files already exist in the project root:
-- `CLAUDE.md`
-- `AGENTS.md`
-- `.cursorrules`
-- `.github/copilot-instructions.md`
+1. `CLAUDE.md`
+2. `AGENTS.md`
+3. `.cursorrules`
+4. `.github/copilot-instructions.md`
 
 If any exist, show the user what was found and ask whether to:
-- **Merge** the principles into the existing file
-- **Replace** the existing file
-- **Cancel**
+1. **Merge** the principles into the existing file
+2. **Replace** the existing file
+3. **Cancel**
 
 Do not overwrite without explicit confirmation.
 
@@ -50,19 +50,19 @@ Also detect:
 
 ## Step 3: Read the Template
 
-Read the `CLAUDE.md` file located in this skill's directory (next to this SKILL.md file). This is the base template you will customize. For the full rationale behind each principle, see `PRINCIPLES.md` in the same directory.
+Read the `CLAUDE.md` file located in this skill's directory (next to this SKILL.md file). This is the base template you will customize; its content becomes the project's `AGENTS.md`. Keep the principles' wording and the Algorithm's order (question, delete, simplify, accelerate, automate) as they are. For the full rationale behind each principle, see `PRINCIPLES.md` in the same directory.
 
 ## Step 4: Generate the Instructions File
 
-Using the template from Step 3, create a `CLAUDE.md` (or `AGENTS.md` if the user's agent platform prefers it) in the project root. The template includes Python and TypeScript as examples — adapt the language-specific sections to match the detected stack:
+Using the template from Step 3, create `AGENTS.md` in the project root, and make `CLAUDE.md` exactly the one line `@AGENTS.md` (Codification item 5 in `PRINCIPLES.md`). If the project already keeps its rules in `CLAUDE.md`, move them into `AGENTS.md`. Write the file in the Communication law's style: numbered lists, one idea per line, nested 4 spaces per level and at most three levels, plain words. The template includes Python and TypeScript as examples. Adapt the language-specific sections to match the detected stack:
 
-1. **Style Guide** — Replace the Python/TypeScript subsections with idiomatic style entries for the detected language(s).
-2. **Project Setup** — Replace with actual setup instructions: package manager commands, build/test/lint scripts found in the project's config files (`package.json` scripts, `Makefile`, `pyproject.toml`, etc.). The Python section in the template shows the level of detail expected.
+1. **Style Guide**: Replace the Python/TypeScript subsections with idiomatic style entries for the detected language(s).
+2. **Project Setup**: Replace with actual setup instructions: package manager commands, build/test/lint scripts found in the project's config files (`package.json` scripts, `Makefile`, `pyproject.toml`, etc.). The Python section in the template shows the level of detail expected.
 
 ## Step 5: Confirm
 
 After writing the file, tell the user:
-- What file was created and where
-- What stack was detected
-- What sections were customized
-- Suggest they review and adjust the Project Setup section for any project-specific tooling
+1. Which files were created and where
+2. What stack was detected
+3. What sections were customized
+4. A suggestion they review and adjust the Project Setup section for any project-specific tooling
