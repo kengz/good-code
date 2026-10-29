@@ -9,7 +9,7 @@ description: >
 
 # The 5 Principles: Agent Skill
 
-You are setting up agent instructions for this project based on **The 5 Principles**: Consistent, Simple, General, Clear, Salient. Their laws (the Algorithm, Iteration, Identity, Refinement, Communication) are in `PRINCIPLES.md`.
+You are setting up agent instructions for this project based on **The 5 Principles**: Consistent, Simple, General, Clear, Salient. Their laws (the Algorithm, Iteration, Self-improvement, Communication) are in `PRINCIPLES.md`.
 
 ## Step 1: Check for Existing Files
 
@@ -19,12 +19,7 @@ Before writing anything, check if any of these files already exist in the projec
 3. `.cursorrules`
 4. `.github/copilot-instructions.md`
 
-If any exist, show the user what was found and ask whether to:
-1. **Merge** the principles into the existing file
-2. **Replace** the existing file
-3. **Cancel**
-
-Do not overwrite without explicit confirmation.
+If files exist, preserve project-specific rules and user work. Follow the authorized merge or replacement scope; ask only when that scope is unclear. Do not duplicate the shared rules or silently remove project requirements.
 
 ## Step 2: Detect Project Stack
 

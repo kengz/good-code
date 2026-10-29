@@ -32,4 +32,4 @@ Copy [`skills/good-code/CLAUDE.md`](skills/good-code/CLAUDE.md) into your projec
 4. **Clear**: Say what it does, so its purpose is obvious from its form alone.
 5. **Salient**: Keep what is essential, reproducible, and likely to endure.
 
-The Method (the Algorithm, Iteration, Identity, Refinement, Communication) is in [`PRINCIPLES.md`](skills/good-code/PRINCIPLES.md).
+The Method (the Algorithm, Iteration, Self-improvement, Communication) is in [`PRINCIPLES.md`](skills/good-code/PRINCIPLES.md).
